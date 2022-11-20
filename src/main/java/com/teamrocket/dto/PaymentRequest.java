@@ -12,4 +12,12 @@ import lombok.Setter;
 public class PaymentRequest {
     private int orderId;
     private double amount;
+
+    @Override
+    public String toString() {
+        return "PaymentRequest{" +
+                "orderId=" + orderId +
+                ", amount=" + amount +
+                '}';
+    }
 }
