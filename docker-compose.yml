@@ -4,10 +4,10 @@ services:
     image: postgres:14.1-alpine
     restart: always
     hostname: postgres
-    container_name: exam_restaurant_service_postgres
+    container_name: exam_payment_service_postgres
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=Qwerty!234
       - POSTGRES_DB=restaurants
     ports:
-      - '6969:5432'
+      - '6970:5432'
