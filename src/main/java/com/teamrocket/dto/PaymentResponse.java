@@ -24,6 +24,5 @@ public class PaymentResponse {
         this.orderId = orderId;
         this.amount = amount;
         this.status = status;
-
     }
 }
