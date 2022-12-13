@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.teamrocket</groupId>
     <artifactId>payment-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <name>payment-service</name>
     <description>manages payments</description>
     <properties>

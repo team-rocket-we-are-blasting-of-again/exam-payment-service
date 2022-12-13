@@ -18,10 +18,6 @@ public class OrderHandler implements ExternalTaskHandler {
     public void execute(ExternalTask externalTask, ExternalTaskService externalTaskService) {
         System.out.println("handlePayment fired!");
         boolean paymentSuccess = true;
-        int randomNum = ThreadLocalRandom.current().nextInt(0, 10 + 1);
-        if (randomNum == 5) {
-            paymentSuccess = false;
-        }
         Map<String, Object> allVariables = externalTask.getAllVariables();
         allVariables.put("payment_accepted", paymentSuccess);
         externalTaskService.complete(externalTask, allVariables);
